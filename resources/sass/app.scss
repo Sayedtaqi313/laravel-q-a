@@ -1,0 +1,45 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.vote,.answer,.view {
+    width:60px;
+    height: 60px;
+}
+.counter {
+    .vote,.status,.view {
+        text-align: center;
+    }
+    .vote,.status {
+        width: 60px;
+        height: 60px;
+    }
+    strong {
+        display: block;
+    }
+    .status {
+        &.unanswered {
+            border:none;
+        }
+        &.answered {
+            border:1px solid $color-green;
+        }
+        &.answered-accepted {
+            background-color: $color-green;
+            color:$color-white;
+        }
+    }
+}
+.inline {
+    display: inline;
+}
+.title {
+    text-decoration: none;
+}
+
+
